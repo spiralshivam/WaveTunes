@@ -6,7 +6,11 @@
   --body: #f9f6ff;
   --max-width: 1200px;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html,
 body {
   font-family: "Roboto", sans-serif;
@@ -187,4 +191,65 @@ nav ul li:hover {
 
 .gift-section {
   scroll-margin: 120px;
+}
+
+/* Add this CSS to create some gap between the login section and bottom info */
+.login-section {
+  background: linear-gradient(to bottom, var(--purple500), var(--purple300));
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  max-width: 400px;
+  margin: 0 auto 50px auto; /* Add margin-bottom for spacing */
+  text-align: center;
+}
+
+.login-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: var(--red600); /* Bold heading color */
+}
+
+.login-section input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+}
+
+.login-section input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.login-section button {
+  background-color: var(--red600);
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.login-section button:hover {
+  background-color: var(--purple600);
+  transition: 0.3s ease-in-out;
+}
+
+.login-section a {
+  color: var(--red600);
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+
+.login-section a:hover {
+  color: var(--purple300);
+  transition: 0.3s ease-in-out;
 }
