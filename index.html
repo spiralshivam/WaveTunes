@@ -10,7 +10,6 @@
     <header>
       <nav class="container">
         <div class="logo">WaveTunes</div>
-
         <ul>
           <a href="#hero">
             <li>Overview</li>
@@ -23,6 +22,9 @@
           </a>
           <a href="#gift">
             <li>Gift Cards</li>
+          </a>
+          <a href="#login" class="login-link">
+            <li>Login</li>
           </a>
         </ul>
       </nav>
@@ -47,13 +49,12 @@
           </h2>
           <h4>
             Stream over 45 million songs, ad-free. Or download albums and tracks
-            to listen to offline. All the music in your personal myTunes library
+            to listen to offline. All the music in your personal WaveTunes library
             — no matter where it came from — lives right alongside the Orange
             Music catalog. Start your free three-month trial with no commitment,
             and cancel anytime.
           </h4>
-          <button class="primary-btn">Start Your Trail Now</button>
-
+          <button class="primary-btn">Start Your Trial Now</button>
           <p>
             Orange Music is available in WaveTunes, and for iOS and Android
             devices.
@@ -80,28 +81,38 @@
         <div class="container">
           <h3>A world of entertainment. Available wherever you are.</h3>
           <p>
-            We are often faced with difficulties, and yet we feel powerless to act. Do we find the satisfaction we seek in pursuit of rewards, or is it simply an illusion? What happens when the truth of our actions is in question, and we are confronted with something that does not meet our expectations? Every step of the way, there are challenges we cannot ignore. Still, we persevere, seeking hope in the midst of trial, trying to find solace through experience.
+            We are often faced with difficulties, and yet we feel powerless to act.
+            Still, we persevere, seeking hope in the midst of trials.
           </p>
         </div>
       </section>
-      <div class="container">
-        <section class="gift-section" id="gift">
-          <div class="gift-card">
-            <img src="images/gift_card.png" alt="gift card" />
+      <section class="gift-section" id="gift">
+        <div class="gift-card">
+          <img src="images/gift_card.png" alt="gift card" />
+        </div>
+        <div class="gift-content">
+          <h3>Gift Card</h3>
+          <p>Already have an Orange WaveTunes Music Gift Card?</p>
+          <hr />
+          <div>
+            <button class="secondary-btn">Redeem</button>
           </div>
-          <div class="gift-content">
-            <h3>Gift Card</h3>
-            <p>
-                It begins with a slight explanation, followed by a series of actions that appear necessary, yet difficult to understand. There are burdens and responsibilities that we must shoulder, but it is through them that we are led to the true meaning of our pursuits. These challenges are complex, bringing discomfort, but they open up new possibilities. Though the path may seem unclear and the obstacles many, it is through perseverance that we find clarity and strength in the end.
-            </p>
-            <p>Already have an Orange WaveTunes Music Gift Card?</p>
-            <hr />
-            <div>
-              <button class="secondary-btn">Redeem</button>
-            </div>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
+      <section id="login" class="login-section">
+        <div class="container">
+          <h2>Login</h2>
+          <form action="/login" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+            <br />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <br />
+            <button type="submit" class="primary-btn">Login</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer>
       <section class="footer-upper">
